@@ -87,13 +87,13 @@
     </style>
   </head>
   <body>
-    <div class="main">
+    <div class="main" role="main">
     <h1>NoSleep plugin</h1>
     <p>Prevent display sleep and enable wake lock in web browsers.</p>
     <script src="../dist/NoSleep.min.js"></script>
 
-    <div role="switch" aria-checked="false" tabindex="0">
-      <span class="label">Wake Lock</span>
+    <div role="switch" aria-checked="false" tabindex="0" aria-labelledby="wakelock_label">
+      <span id="wakelock_label" class="label">Wake Lock</span>
       <span class="switch">
         <span></span>
       </span>
